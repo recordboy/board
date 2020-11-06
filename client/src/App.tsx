@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import InputText from './components/InputText';
 
 function App() {
   return (
     <div className="App">
-      <button type="button" onClick={() => {
+      <InputText />
+      
+      {/* <button type="button" onClick={() => {
         fetch('/api/data')
         .then((res) => {
           return res.json();
@@ -11,7 +14,7 @@ function App() {
         .then((data) => {
           console.log(data);
         });
-      }}>get data</button>
+      }}>get data</button> */}
     </div>
   );
 }
