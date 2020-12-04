@@ -2,9 +2,16 @@
 import React from 'react';
 import './InputText.scss';
 
-const InputText = () => {
+const InputText = (props: {
+    changeData: (data: string) => void
+}) => {
+
+    const { changeData } = props;
+
     return (
-        <div className="text">text</div>
+        <input type="text" className="input-text" onChange={(e: any) => {
+            changeData(e.target.value);
+        }}/>
     );
 }
 
