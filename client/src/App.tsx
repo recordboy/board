@@ -67,8 +67,8 @@ function App() {
     <div className="App">
       <InputText changeData={changeData} />
       <Button sendData={sendData} />
-      {JSON.stringify(contents)}
-      {/* <Screen contents={contents} /> */}
+      {/* {JSON.stringify(contents)} */}
+      <Screen contents={contents} />
     </div>
   );
 }

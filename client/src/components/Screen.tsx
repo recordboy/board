@@ -3,7 +3,20 @@ import "./Screen.scss";
 
 const Screen = (props: { contents: any }) => {
   const { contents } = props;
-  return <div className="screen">{contents}</div>;
+  console.log(contents);
+  return (
+    <div className="screen">
+      {contents.map((item: any) => {
+        return (
+          <div>
+            <div>{item.item.date}</div>
+            <div>{item.item.text}</div>
+          </div>
+        );
+      })}
+
+    </div>
+  );
 };
 
 export default Screen;
