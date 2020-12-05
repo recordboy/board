@@ -6,9 +6,9 @@ const Screen = (props: { contents: any }) => {
   console.log(contents);
   return (
     <div className="screen">
-      {contents.map((item: any) => {
+      {contents.map((item: any, idx: number) => {
         return (
-          <div>
+          <div key={idx}>
             <div>{item.item.date}</div>
             <div>{item.item.text}</div>
           </div>
