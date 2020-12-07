@@ -1,1 +1,51 @@
+.screen {
+    padding: 15px 15px 80px;
+}
 
+.screen .item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 65px;
+}
+
+.screen .item .id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.screen .item .date {
+    position: absolute;
+    left: 65px;
+    bottom: -20px;
+    font-size: 11px;
+    color: #999;
+}
+
+.screen .item .message {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.screen .item .message:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: -8px;
+    width: 0;
+    height: 0;
+    transform: rotate(270deg);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+}
