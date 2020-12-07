@@ -3,12 +3,12 @@ import "./Button.scss";
 
 const Button = (props: { sendData: () => void }) => {
   const { sendData } = props;
-
+  
   return (
-    <button type="button" className="btn" onClick={() => {
+    <button type="button" className="button" onClick={() => {
         sendData();
     }}>
-      send
+      SEND
     </button>
   );
 };
