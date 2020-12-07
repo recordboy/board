@@ -3,18 +3,17 @@ import "./Screen.scss";
 
 const Screen = (props: { contents: any }) => {
   const { contents } = props;
-  console.log(contents);
   return (
     <div className="screen">
       {contents.map((item: any, idx: number) => {
         return (
-          <div key={idx}>
-            <div>{item.item.date}</div>
-            <div>{item.item.text}</div>
+          <div key={idx} className="item">
+            <div className="id">{item.item.id}</div>
+            <div className="date">{item.item.date}</div>
+            <div className="message">{item.item.message}</div>
           </div>
         );
       })}
-
     </div>
   );
 };
