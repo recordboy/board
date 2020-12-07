@@ -1,18 +1,28 @@
-
-import React from 'react';
-import './InputText.scss';
+import React from "react";
+import "./InputText.scss";
 
 const InputText = (props: {
-    changeData: (data: string) => void
+  message: string;
+  changeData: (data: string) => void;
+  sendData: (data: string) => void;
 }) => {
+  const { message, changeData, sendData } = props;
 
-    const { changeData } = props;
-
-    return (
-        <input type="text" className="input-text" onChange={(e: any) => {
-            changeData(e.target.value);
-        }}/>
-    );
-}
+  return (
+    <input
+      type="text"
+      className="input-text"
+      onChange={(e: any) => {
+        changeData(e.target.value);
+      }}
+      onKeyPress={(e: any) => {
+        if (e.charCode === 13) {
+          sendData(e.target.value);
+        }
+      }}
+      value={message}
+    />
+  );
+};
 
 export default InputText;
