@@ -1,7 +1,7 @@
 # canvas
 fs 모듈을 이용한 JSON 저장 예제
 
-[## 예제 화면](http://recordboy-canvas.herokuapp.com/)
+## [예제 화면](http://recordboy-canvas.herokuapp.com/)
 
 ## 사용기술
 ### Front-End
